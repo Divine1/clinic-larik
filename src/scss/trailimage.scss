@@ -1,0 +1,35 @@
+.trailimage{
+    font-size: 2rem;
+    position: relative;
+    .imgcontent{
+        position: relative;
+        overflow: hidden;
+        min-height: 450px;
+        .img{
+            top:0;
+            display: block;
+            transition: all 1s;
+            backface-visibility: hidden;
+            transform: translateX(100%);
+            position: absolute;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .img.active{
+            position: relative;
+            display: block;
+            z-index:10;
+        }
+        .img.next{
+            transform: translateX(0%);
+            width: 100%;
+        }
+        .img.prev{
+            transform: translateX(-100%);
+            width: 100%;
+            z-index:0;
+        }
+    }
+}

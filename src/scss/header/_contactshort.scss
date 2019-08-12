@@ -1,0 +1,109 @@
+.contactshort{
+    .holder1{
+        padding: 0.5rem 0;
+        background-color: #f1f5f8;
+        .row{
+            
+            .left{
+                float:right;
+                vertical-align: middle;
+                .direction{
+                    >div{
+                        >div:nth-child(1){
+                            svg{
+                                font-size: 2.5rem;
+                            }
+                        }
+                        >div:nth-child(2){
+                            font-size: 1.7rem;
+                            padding:0 1rem;
+                        }
+                    }
+                }
+            }
+            .right{
+                display: table-cell;
+                float: left;
+                .sonetworkicons{
+                    svg{
+                        font-size: 2.9rem;
+                    }
+                }
+                
+            }    
+            .clearfix{
+                clear: both;
+            }
+        }
+        @media only screen and (max-width: 900px){
+            .row{
+                margin: 0 auto;
+                display: table;
+                .left{
+                    .direction svg{
+                        font-size: 2.5rem !important;
+                        
+                    }
+                    .direction div{
+                        font-size: 1.7rem !important;
+                        
+                    }
+                }
+                .right{
+                    .sonetworkicons{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .holder2{
+        background-color: white;
+        .row{
+            .content{
+                padding:0.7rem 0;
+                .left{
+                    display: table-cell;
+                    vertical-align: middle;
+                    float: left;
+                    font-size: 3rem;
+                    line-height: 8rem;
+                    svg{
+                        color:red;
+                        font-weight: bold !important;
+                    }
+                }
+                .right{
+                    display: table-cell;
+                    vertical-align: middle;
+                    float: right;
+                    font-size: 1.6rem;
+                    >div{
+                        >div{
+                            display: table-cell;
+                            vertical-align: middle;
+                            padding:0.5rem;
+                        }
+                        svg{
+                            font-size: 2.5rem;
+                        }
+                    }
+
+                }
+                .clearfix{
+                    clear: both;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 800px){
+        .holder1{
+            padding: 0.5rem 0;
+        }
+        .holder2{
+            display: none;
+        }
+    }
+
+}

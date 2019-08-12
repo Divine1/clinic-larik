@@ -1,0 +1,37 @@
+.gallerycomponent{
+    position: relative;
+    text-align: center;
+    .caption{
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 1px 1px 1px grey;
+        padding:2rem 0;
+    }
+    >div:nth-child(2){
+        
+        >div{
+            
+            .ReactGridGallery_tile{
+                .ReactGridGallery_tile-viewport img{
+                    transition: all 500ms ease;
+                }
+                .ReactGridGallery_tile-viewport img:hover{
+                    transform: scale(1.2);
+                }
+                .ReactGridGallery_tile-bottom-bar{
+                    >div{
+                        padding:1rem;
+                        span{
+                            color:white !important;
+                            font-weight: bold !important;
+                            display: inline-block !important;
+                            padding:1rem !important;
+                            font-size: 1rem !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

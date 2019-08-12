@@ -1,0 +1,53 @@
+.contactfootercomponent{
+    background-image: linear-gradient(160deg, grey, aqua);
+    >div{
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        //background-color: aqua;
+        
+        >div{
+            margin: 2rem 2rem;
+        }
+        .head{
+            font-weight: bold;
+            color: white;
+            font-size: 2rem;
+        }
+        
+        .contact,.officehours,.importantcontent{
+            width:21rem;
+            >div:not(:first-child){
+                padding:1rem 0;
+            }
+        }
+        .importantcontent{
+            >div:nth-child(2){
+                >div{
+                    padding:0.3rem 0;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    .contactfootercomponent{
+        >div{
+            justify-content: unset;
+            align-items: center;
+            //flex-wrap: wrap;
+            flex-direction: column;
+            >div{
+                margin: 1rem 0;
+            }
+            .head{
+                text-align: center;
+            }
+            .contact,.officehours,.importantcontent{
+                //width:100%;
+                //text-align: center
+            }
+        }
+    }
+}

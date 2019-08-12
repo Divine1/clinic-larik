@@ -1,0 +1,12 @@
+.termin{
+    display: inline-block;
+    padding: 1.7rem;
+    font-size: 1.7rem;
+    color:white;
+    background-color: #ea1e31;
+    font-weight:600;
+    cursor: pointer;
+    &:hover{
+        background-color: darken($color: #ea1e31, $amount: 20%);
+    }
+}

@@ -1,0 +1,119 @@
+.popup{
+    position: fixed;
+    top:0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(grey,0.9);
+    &.toggle{
+        display: none;
+    }
+    .content{
+        position: absolute;
+        top:40%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        min-width: 350px;
+        width: 50vw;
+        max-width: 900px;
+        .popupcontent{
+            background-color: rgb(16, 17, 16);
+            margin: 0 auto;
+            padding: 0.5rem;
+            color:white;
+            font-weight: bold;
+            .row{
+                padding: 1rem;
+                .left{
+                     display: inline-block;
+                     width: 50%;
+                     
+                     input{
+                         width: 90%;
+                         padding: 1rem;
+                         font-size: 1rem;
+                     }
+                    
+                     select{
+                         font-size: 1.3rem;
+                         option{
+                         }
+                     }
+                    
+                }
+                
+                .right{
+                 display: inline-block;
+                     width: 50%;
+                     
+                     input{
+                         width: 90%;
+                         padding: 0.5rem;
+                         font-size: 1.1rem;
+                     }
+                     
+                     select{
+                         font-size: 1.3rem;
+                         option{
+                         }
+                     }
+                }
+                .left.two,
+                .right.two{
+                     >div {
+                         display: inline-block;
+                         margin-right:1rem;
+                     }
+                }
+                
+                .fullwidth{
+                     width: 100%;
+                     input{
+                         width: 90%;
+                         padding: 0.5rem;
+                         font-size: 1.1rem;
+                     }
+                     textarea{
+                         width: 90%;
+                         padding: 0.5rem;
+                         font-size: 1.1rem;
+                     }
+                }
+                .button{
+                    margin-top: 1rem;
+                    text-align: center;
+                    button{
+                        text-transform: uppercase;
+                         background-color: grey;
+                         padding: 0.8rem 1.5rem;
+                         font-size: 1.2rem;
+                         color:white;
+                         font-weight: bold;
+                         &:hover{
+                             background-color: rgba(grey,0.5);
+                             cursor: pointer;
+                         }
+                    }
+                }
+                
+            }
+            label{
+                font-size: 1.3rem;
+                text-transform: uppercase;
+            }
+            textarea,input,button,label,select{
+                outline: none;
+                border:none;
+                border-radius: 6px;
+                font-size: rem !important;
+                padding:1rem;
+                min-width: 20rem;
+            }
+            .header{
+                font-size:2.7rem;
+                padding: 1rem 0;
+                text-align: center;
+            }
+         }
+    }
+}
