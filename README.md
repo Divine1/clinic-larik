@@ -70,15 +70,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 
 
-
----------------
-morning
-wash put salt 1 visil off
-evening
-extra water 2 visil
------------------
-
-
 https://www.npmjs.com/package/react-datetime-picker
 http://projects.wojtekmaj.pl/react-datetime-picker/
 
